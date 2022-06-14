@@ -1,0 +1,9 @@
+# By default, if the file is detected as text, and it is stored with `LF`
+# endings in the index, then `LF` endings are used in the working
+# directory.
+* text=auto eol=lf
+
+# The old DOS remanents are among the few text files that left that
+# should always use `CRLF`. 
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
