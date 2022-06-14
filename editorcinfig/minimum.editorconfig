@@ -1,0 +1,21 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+quote_type = double
+
+[*.{json,jsonc}]
+indent_size = 2
+
+# match any file ending with `.cmd` or `.bat`, ignore case
+[*.{cmd,bat,[cC][mM][dD],[bB][aA][tT]}]
+end_of_line = crlf
+
+[Makefile]
+indent_size = 8
+indent_style = tab
